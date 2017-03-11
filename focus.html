@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head
+<meta charset="utf-8">
+<title>jquery codes</title>
+</head>
+<body>
+<input type="text" placeholder="first name" id="txtname">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#txtname").focus(function(){
+$(this).css({"background-color":"red","color":"white"});
+});
+$("#txtname").blur(function(){
+$(this).css({"background-color":"pink","color":"white"});
+});
+});
+</script>
+</body>
+</html>

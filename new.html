@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> java script code</title>
+</head>
+<body>
+<input type="text" id="txtvalue1"><br>
+<input type="text" id="txtvalue2"><br>
+result:<p id="p1"></p>
+<input type="button" value="Addition" onclick="addfun()">
+<script>
+function addfun(){
+var x = document.getElementById("txtvalue1").value;
+var y = document.getElementById("txtvalue2").value;
+var z = parseInt(x) + parseInt(y);
+document.getElementById("p1").innerHTML = z;
+}
+</script>
+</body>
+</html>

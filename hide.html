@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> jquery codes </title>
+</head>
+<body>
+<p id="p1">this is a simle paragraph</p>
+<input type="button" value="click on me to hide" id="btnhidep" onclick="myfun();">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btnhidep").click(function(){
+$("#p1").hide();
+})
+})
+function myfun(){
+document.getElementById("p1").style.display="none";
+}
+</script>
+</body>
+</html>

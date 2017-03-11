@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head
+<meta charset="utf-8">
+<title>jquery codes</title>
+</head>
+<style>
+div
+{
+width:200px;
+height:200px;
+color:white;
+background-color:green;
+}
+</style>
+<body>
+<div>
+this is a simple paragraph
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("div").mouseleave(function(){
+alert("you leave the mouse on the div element");
+});
+});
+</script>
+</body>
+</html>

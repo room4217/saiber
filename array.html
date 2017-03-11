@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="uft-8">
+<title>arrya data types</title>
+</head>
+<body>
+<p id="p1"></p>
+<input type="button"value="Create Array"onclick="createarray();">
+<script>
+function createarray(){
+var cities= ["vij","gudivada","goa","chennai","delhi","pune"];
+var mylist = "<ol>";
+for (var i=0;i<cities.length;i++){
+mylist += "<li>" + cities[i] + "</li>";
+}
+mylist += "</ol>";
+document.getElementById("p1").innerHTML = mylist;
+}
+</script>
+</body>
+
+</html>

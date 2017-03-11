@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="uft-8">
+<title></title>
+</head>
+<body>
+<input type="button"value="Append"id="btnappend">
+<input type="button"value="Prepend"id="btnpre">
+<input type="button"value="After"id="btnafter">
+<input type="button"value="Before"id="btnbefore">
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"><span>five centuries, but also the leap</span> into electronic
+ typesetting, remaining essentially unchanged. It was popularised-----------</div>
+ <div id="div4"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btnappend").click(function(){
+$("#div3").append("<b>naresh babu</b>");
+});
+$("#btnpre").click(function(){
+$("#div3").prepend("<b>kotturi</b>");
+});
+$("#btnafter").click(function(){
+$("#div3").after("<input type='text'placeholder='name'>");
+});
+$("#btnbefore").click(function(){
+$("#div3").before("<input type='text'placeholder='email'>");
+});
+});
+</script>
+</body>
+</html>

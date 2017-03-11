@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head
+<meta charset="utf-8">
+<title>jquery codes</title>
+</head>
+<style>
+div
+{
+width:200px;
+height:200px;
+color:white;
+background-color:green;
+display:none;
+}
+</style>
+<body>
+<div>
+this is a simple paragraph
+</div>
+<input type="button"value="fadeIn"id="btnfadein">
+<input type="button"value="fadeOut"id="btnfadeout">
+<input type="button"value="fadeToggle"id="btnfadetoggle">
+<input type="button"value="fadeTo"id="btnfadeto">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btnfadein").click(function(){
+$("div").fadeIn(4000, myfun1);
+});
+$("#btnfadeout").click(function(){
+$("div").fadeOut(4000, myfun2);
+});
+$("#btnfadetoggle").click(function(){
+$("div").fadeToggle(4000, myfun3);
+});
+$("#btnfadeto").click(function(){
+$("div").fadeTo(4000,0.5, myfun4);
+});
+});
+function myfun1() {
+alert("fedein method is completed");
+}
+function myfun2() {
+alert("fedeout method is completed");
+}
+function myfun3() {
+alert("fedetoggle method is completed");
+}
+function myfun4() {
+alert("fedeto method is completed");
+}
+</script>
+</body>
+</html>

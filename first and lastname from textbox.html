@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="uft-8">
+<title>js to get the first and last names from the testboxes</title>
+</head>
+<body>
+<form id="form1"onsubmit="getFormvalue();">
+<label for="firstname">firstname:</label><input id="firstname"type="text"name="firstname">
+<br>
+<label for="lastname">lastname:</label><input id="lastname"type="text"name="lastname">
+<br>
+<input type="submit"name="submit the form">
+</form>
+<script>
+function getFormvalue(){
+ var x=document.getElementById("form1").value;
+  for (var i=0;i<x.length;i++)
+  {
+   if (x.elements[i].value!='Submit')
+    {  
+      console.log(x.elements[i].value);
+     }  
+   }
+}
+</script>
+</body>
+</html>

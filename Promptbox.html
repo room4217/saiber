@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+</head>
+	<body>
+	First Name <input type="text" id="fName" onkeyup="generateFullName()" /><br/>
+	Last Name <input type="text" id="lName" onkeyup="generateFullName()" /><br/>
+	Full Name <span id="fullName" />
+		<script type="text/javascript">
+			function generateFullName()
+			{
+				document.getElementById('fullName').innerText = 
+				document.getElementById('fName').value + ' ' + 
+				document.getElementById('lName').value;
+    }
+</script>
+</body>
+</html>
